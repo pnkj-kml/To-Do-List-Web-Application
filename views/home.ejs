@@ -1,1 +1,28 @@
-<h1> Welcome!!!...... TO DO web application</h1>
+<div>
+    <form action="/create-task" method="POST"> 
+        <input type="text" name = "task_Description" placeholder="Enter your Task here" required>
+        <select name="category" required>
+            <option value="" disabled selected>Select your option</option>
+            <option>Important</option>
+            <option>Assigned to me</option>
+            <option>Planned</option>
+            <option>Flagged email</option>
+            <option>Tasks</option>
+            <option>Others</option>
+        </select>
+        <input type="date" name="due_date"  required>
+        <button type="submit"> Add </button>
+    </form>    
+</div>
+
+<ul>
+    <% for(let task of task_list) { %>
+        <li> <p>
+                <span> <%= task.details %> &nbsp; &nbsp;</span>
+                <span> <%= task.due_date.toDateString() %> &nbsp; &nbsp;</span>
+                <span> <%= task.task_type %> &nbsp; &nbsp;</span>
+                <a href="/delete-task?id=<%=task._id%>"> <b>DEL</b></a>
+        </p> </li>
+    <% } %>
+</ul>
+

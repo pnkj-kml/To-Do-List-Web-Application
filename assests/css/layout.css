@@ -1,4 +1,12 @@
-body{
+:root {
+    --brand-color: #00b82e;
+    /* --brand-color: #ED1024; */
+    --brand-suffix-color: darkorange;
+    --navigation-background-color: #21252d;
+    --main-background-color: #0c0f12;
+  }
+  body{
+    margin: 0px;
     text-align: center;
     background-color: beige;
 }
