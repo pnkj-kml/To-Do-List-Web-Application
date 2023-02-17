@@ -1,12 +1,30 @@
 :root {
     --brand-color: #00b82e;
-    /* --brand-color: #ED1024; */
+    --brand-sub-color: #ED1024;
     --brand-suffix-color: darkorange;
     --navigation-background-color: #21252d;
     --main-background-color: #0c0f12;
   }
-  body{
+
+body{
     margin: 0px;
+    background-color: var(--main-background-color);
+}
+
+/* ##########################################################
+                        Header Styles
+    ####################################################### */
+
+.header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    background-color: var(--navigation-background-color);
+    border: 3.5px solid var(--brand-color);
+    border-style: solid none none none;  
+}
+.header h1{
+    color: var(--brand-suffix-color);
     text-align: center;
-    background-color: beige;
 }

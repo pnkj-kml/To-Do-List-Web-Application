@@ -1,0 +1,34 @@
+/* flex class */
+.i-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.main{
+    margin-top: 4.5rem;
+    /* width: 70rem; */
+}
+
+.task_creation{
+    /* background-color: var(--brand-suffix-color); */
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.description{
+    color: var(--brand-suffix-color);
+    font-size: medium;
+    /* background-color: whitesmoke; */
+    border: none;
+    border: 2px solid var(--brand-color);
+    outline: none;
+    border-radius: 7px;
+    padding: 10px;
+    margin-right: 2.5rem;
+}
+
+.description::placeholder {
+    color: var(--brand-suffix-color);
+    font-size: medium;
+  }
+  
